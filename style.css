@@ -530,7 +530,7 @@ nav a:focus{
 
 .about h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.8rem;
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
     margin-bottom: 15px;
     text-transform: uppercase;
     font-weight: 700;
@@ -538,10 +538,10 @@ nav a:focus{
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
     letter-spacing: 1px;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.15;
 }
 
-.about p{ font-size: 1.1em; margin-bottom: 20px; text-align: center; }
+.about p{ font-size: clamp(1rem, 2.4vw, 1.1rem); margin-bottom: 20px; text-align: center; }
 
 /* About section header */
 .about-header{
@@ -607,7 +607,7 @@ nav a:focus{
 
 .about-block p{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.05rem;
+    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
     line-height: 1.7;
     text-align: center;
     margin: 0;
@@ -620,6 +620,13 @@ nav a:focus{
     max-width: 1200px; 
     margin: 0 auto; 
     gap: 25px;
+}
+
+/* Responsividade específica da seção About */
+@media (max-width: 900px){
+    .about{ padding: 40px 16px; }
+    .about-content{ flex-direction: column; gap: 20px; padding: 0 6px; }
+    .features{ flex-direction: column; gap: 16px; padding: 0 6px; }
 }
 
 .feature-card{ 
