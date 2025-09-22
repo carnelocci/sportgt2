@@ -8,6 +8,10 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+/* Correções gerais de responsividade e renderização */
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+
 header {
     background-color: transparent;
     padding: 10px 20px;
@@ -66,7 +70,7 @@ header{
 
 /* opção B: a classe vai na tag <img> */
 img.logo{
-    width: 300px;
+    width: clamp(180px, 24vw, 300px);
     height: auto;
     display: block;
     transition: width .25s ease, transform .25s ease;
@@ -136,7 +140,8 @@ nav a:focus{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 100vh; /* fallback */
+    min-height: 100svh; /* corrige altura em mobile */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -148,7 +153,8 @@ nav a:focus{
 .hero-content {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* fallback */
+    height: 100svh; /* corrige altura em mobile */
     position: relative;
 }
 
@@ -192,7 +198,7 @@ nav a:focus{
 }
 
 .logo-bottom {
-    width: 120px;
+    width: clamp(80px, 10vw, 120px);
     height: auto;
     opacity: 0.9;
     transition: opacity 0.3s ease;
@@ -275,7 +281,7 @@ nav a:focus{
 
 .gallery-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
@@ -513,6 +519,7 @@ nav a:focus{
     .tire-modal-image-wrap{
         min-height: 300px;
     }
+    .tire-modal-info{ padding: 20px; }
 }
 
 .about h1{
@@ -1236,7 +1243,7 @@ body {
 /* Galeria Interativa de Pneus */
 .interactive-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
     max-width: 1000px;
     margin: 0 auto;
