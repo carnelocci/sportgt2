@@ -332,7 +332,7 @@ nav a{
         height: 40vh !important;
         min-height: 200px !important;
         background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('pneuservico.png') !important;
-        background-size: cover !important;
+        background-size: contain !important;
         background-position: center !important;
         display: flex !important;
         align-items: center !important;
@@ -658,7 +658,7 @@ nav a:focus{
     padding: 0;
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('pneuservico.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh; /* fallback */
@@ -910,7 +910,7 @@ nav a:focus{
     padding: 60px 20px;
     text-align: center;
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('pneuservico.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -1662,7 +1662,7 @@ body {
         flex: none; 
         height: 40vh; 
         background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('pneuservico.png');
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
     .hero-right{ 
