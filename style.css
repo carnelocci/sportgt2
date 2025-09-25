@@ -1088,7 +1088,7 @@ nav a:focus{
 
 .about-block{
     flex: 1;
-    background: rgba(0,0,0,0.6);
+    background: transparent;
     padding: 35px 30px;
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.15);
@@ -1112,7 +1112,7 @@ nav a:focus{
 .about-block:hover{
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    background: rgba(0,0,0,0.7);
+    background: transparent;
 }
 
 .about-block h3{
@@ -1152,7 +1152,7 @@ nav a:focus{
 
 .feature-card{ 
     text-align: center; 
-    background: rgba(0,0,0,0.5);
+    background: transparent;
     padding: 35px 25px;
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -1177,7 +1177,7 @@ nav a:focus{
 .feature-card:hover{
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 25px 50px rgba(0,0,0,0.6);
-    background: rgba(0,0,0,0.6);
+    background: transparent;
 }
 
 .feature-card h3{
@@ -1351,7 +1351,7 @@ footer a{ color: #fff; text-decoration: none; margin-left: 10px; }
 .about-block:hover {
     transform: translateY(-5px) scale(1.01);
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-    background: rgba(0,0,0,0.7);
+    background: transparent;
     border: 1px solid rgba(255,200,87,0.2);
     transition: all 0.3s ease;
 }
@@ -1359,7 +1359,7 @@ footer a{ color: #fff; text-decoration: none; margin-left: 10px; }
 .feature-card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    background: rgba(0,0,0,0.6);
+    background: transparent;
     border: 1px solid rgba(255,200,87,0.3);
     transition: all 0.3s ease;
 }
