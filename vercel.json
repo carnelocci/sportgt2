@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.jpg",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/sobre",
+      "dest": "/sobre.html"
+    },
+    {
+      "src": "/servicos",
+      "dest": "/servicos.html"
+    },
+    {
+      "src": "/contato",
+      "dest": "/contato.html"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": true
+  }
+}
