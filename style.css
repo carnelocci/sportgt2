@@ -100,7 +100,7 @@ header{
 
 /* opção B: a classe vai na tag <img> */
 img.logo{
-    width: clamp(250px, 32vw, 450px); /* Aumentado significativamente */
+    width: 280px; /* Tamanho fixo mais controlado */
     height: auto;
     display: block;
     transition: all .3s ease;
@@ -328,7 +328,7 @@ nav a:focus{
 
 .hero h1{
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
-    font-size: clamp(2rem, 6vw, 3.4rem);
+    font-size: 2.8rem; /* Tamanho fixo mais controlado */
     line-height: 1.1;
     margin-bottom: 25px;
     color: #fff;
@@ -340,7 +340,7 @@ nav a:focus{
 }
 .hero p{ 
     font-family: 'Roboto', Arial, sans-serif;
-    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    font-size: 1.1rem; /* Tamanho fixo mais controlado */
     margin-bottom: 25px; 
     color: rgba(255,255,255,0.95); 
     text-align: center;
@@ -351,7 +351,7 @@ nav a:focus{
 .lead{ 
     font-family: 'Montserrat', sans-serif; 
     font-weight: 600; 
-    font-size: 1.6rem; 
+    font-size: 1.4rem; /* Tamanho fixo mais controlado */
     margin: 0 0 25px 0; 
     color: #fff; 
     text-align: center; 
@@ -385,14 +385,14 @@ nav a:focus{
 
 .gallery-header h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.2rem;
+    font-size: 2.8rem; /* Tamanho fixo mais controlado */
     color: var(--bg-dark);
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .gallery-header p{
-    font-size: 1.3rem;
+    font-size: 1.1rem; /* Tamanho fixo mais controlado */
     color: #666;
     line-height: 1.6;
 }
@@ -1277,7 +1277,7 @@ body {
     .feature-card{ margin: 0 15px; padding: 25px 20px; }
 
     /* Reduz logo em telas médias */
-    img.logo{ width: 180px; } /* Aumentado proporcionalmente */
+    img.logo{ width: 200px; } /* Tamanho fixo mais controlado */
 
     header{ left: 10px; right: 10px; padding: 15px 20px; } /* Aumentado para acomodar logo maior */
 
@@ -1291,7 +1291,7 @@ body {
 }
 
 @media (max-width: 480px){
-    img.logo{ width: 150px; transform: translateY(-2px); } /* Aumentado proporcionalmente */
+    img.logo{ width: 150px; transform: translateY(-2px); } /* Tamanho fixo mais controlado */
     header{ flex-direction: column; align-items: flex-start; position: relative; top: 0; left: 0; right: 0; padding: 10px; }
     nav{ margin-left: 0; margin-top: 8px; }
     
