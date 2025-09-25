@@ -37,13 +37,13 @@ img.logo {
 */
 
 :root{
-    --bg-dark: #7a0000; /* slightly refined tone */
+    --bg-dark: #050505; /* slightly refined tone */
     --accent: #ffc857; /* warm accent */
     --link-color: #ffffff;
     --muted: rgba(255,255,255,0.88);
 }
 
-/* Typography: Montserrat for headings, Roboto for text */
+/* Typography: Montserrat for headings, Roboto for text, Orbitron for Sport GT brand */
 body{
     font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -56,28 +56,82 @@ body{
     -webkit-overflow-scrolling: touch;
 }
 
+/* Classe específica para textos "Sport GT" com fonte da logo */
+.sport-gt-brand {
+    font-family: 'Orbitron', 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 header{
     background-color: transparent;
-    padding: 20px 30px;
+    padding: 25px 40px; /* Aumentado para acomodar logo maior */
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Distribui elementos nas extremidades */
     z-index: 1000;
 }
 
 /* opção B: a classe vai na tag <img> */
 img.logo{
-    width: clamp(180px, 24vw, 300px);
+    width: clamp(250px, 32vw, 450px); /* Aumentado significativamente */
     height: auto;
     display: block;
-    transition: width .25s ease, transform .25s ease;
+    transition: all .3s ease;
+    filter: drop-shadow(0 8px 25px rgba(0,0,0,0.4)); /* Sombra para destaque */
+    z-index: 1001;
+    position: relative;
+    order: 3; /* Posiciona logo por último (direita) */
+}
+
+/* Efeito hover para a logo */
+img.logo:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(0 12px 35px rgba(0,0,0,0.6)) brightness(1.1);
+    transition: all .3s ease;
+}
+
+/* Efeito de brilho sutil na logo */
+img.logo::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent, rgba(255,255,255,0.1));
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .3s ease;
+    z-index: -1;
+}
+
+img.logo:hover::before{
+    opacity: 1;
+}
+
+/* Animação sutil para a logo na página inicial */
+@keyframes logoGlow {
+    0%, 100% { 
+        filter: drop-shadow(0 8px 25px rgba(0,0,0,0.4));
+    }
+    50% { 
+        filter: drop-shadow(0 8px 25px rgba(0,0,0,0.4)) drop-shadow(0 0 20px rgba(255,255,255,0.1));
+    }
+}
+
+/* Aplicar animação apenas na página inicial */
+.hero img.logo {
+    animation: logoGlow 4s ease-in-out infinite;
 }
 
 nav{
-    margin-left: auto; /* empurra o nav para a direita dentro do header flex */
+    margin-right: auto; /* empurra o nav para a esquerda dentro do header flex */
 }
 
 /* estilos do botão hamburguer e comportamento do nav em mobile */
@@ -87,6 +141,7 @@ nav{
     border: none;
     font-size: 1.6rem;
     cursor: pointer;
+    order: 2; /* Posiciona o burger entre nav e logo */
 }
 
 .nav{
@@ -94,6 +149,7 @@ nav{
     gap: 12px;
     position: relative;
     z-index: 1001; /* assegura nav acima de textos */
+    order: 1; /* Posiciona nav primeiro (esquerda) */
 }
 
 nav a{
@@ -1200,9 +1256,9 @@ body {
     .feature-card{ margin: 0 15px; padding: 25px 20px; }
 
     /* Reduz logo em telas médias */
-    img.logo{ width: 120px; }
+    img.logo{ width: 180px; } /* Aumentado proporcionalmente */
 
-    header{ left: 10px; right: 10px; padding: 8px 12px; }
+    header{ left: 10px; right: 10px; padding: 15px 20px; } /* Aumentado para acomodar logo maior */
 
     .burger{ display: block; margin-left: 12px; z-index: 1101; }
 
@@ -1214,7 +1270,7 @@ body {
 }
 
 @media (max-width: 480px){
-    img.logo{ width: 100px; transform: translateY(-2px); }
+    img.logo{ width: 150px; transform: translateY(-2px); } /* Aumentado proporcionalmente */
     header{ flex-direction: column; align-items: flex-start; position: relative; top: 0; left: 0; right: 0; padding: 10px; }
     nav{ margin-left: 0; margin-top: 8px; }
     
