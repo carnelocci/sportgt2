@@ -331,7 +331,7 @@ nav a{
         flex: none !important;
         height: 40vh !important;
         min-height: 200px !important;
-        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('fundo.png') !important;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('pneuservico.png') !important;
         background-size: cover !important;
         background-position: center !important;
         display: flex !important;
@@ -657,7 +657,7 @@ nav a:focus{
     background-color: var(--bg-dark);
     padding: 0;
     position: relative;
-    background-image: url('fundo.png');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('pneuservico.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -743,7 +743,7 @@ nav a:focus{
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    text-shadow: 0 4px 12px rgba(0,0,0,0.9);
 }
 .hero p{ 
     font-family: 'Roboto', Arial, sans-serif;
@@ -752,6 +752,7 @@ nav a:focus{
     color: rgba(255,255,255,0.95); 
     text-align: center;
     line-height: 1.7;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
 /* Subheading/lead text for a more polished hero */
@@ -764,6 +765,7 @@ nav a:focus{
     text-align: center; 
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.8);
 }
 
 /* Default contact button (used when not inside .div_btn) */
@@ -907,7 +909,7 @@ nav a:focus{
     background-color: var(--bg-dark);
     padding: 60px 20px;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('fundo.png');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('pneuservico.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1659,7 +1661,7 @@ body {
     .hero-left{ 
         flex: none; 
         height: 40vh; 
-        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('fundo.png');
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('pneuservico.png');
         background-size: cover;
         background-position: center;
     }
