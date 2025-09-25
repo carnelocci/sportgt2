@@ -1228,9 +1228,10 @@ footer a{ color: #fff; text-decoration: none; margin-left: 10px; }
     background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(122,0,0,0.8)), url('pneus1.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .sobre-historia::before {
@@ -1282,9 +1283,10 @@ footer a{ color: #fff; text-decoration: none; margin-left: 10px; }
     background: linear-gradient(135deg, rgba(122,0,0,0.7), rgba(0,0,0,0.6)), url('pneus3.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .sobre-diferenciais::before {
@@ -2912,6 +2914,8 @@ body {
     z-index: 10;
     display: block;
     visibility: visible;
+    margin-top: 0;
+    clear: both;
 }
 
 .site-footer a{
