@@ -331,7 +331,7 @@ nav a{
         flex: none !important;
         height: 40vh !important;
         min-height: 200px !important;
-        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('background inicial.png') !important;
+        background: url('background inicial.png') !important;
         background-size: contain !important;
         background-position: center !important;
         display: flex !important;
@@ -657,7 +657,7 @@ nav a:focus{
     background-color: var(--bg-dark);
     padding: 0;
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('background inicial.png');
+    background-image: url('background inicial.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -735,7 +735,7 @@ nav a:focus{
 
 .hero h1{
     font-family: 'Montserrat', 'Segoe UI', sans-serif;
-    font-size: 2.8rem; /* Tamanho fixo mais controlado */
+    font-size: 2.4rem; /* Tamanho reduzido */
     line-height: 1.1;
     margin-bottom: 25px;
     color: #fff;
@@ -909,7 +909,7 @@ nav a:focus{
     background-color: var(--bg-dark);
     padding: 60px 20px;
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('background inicial.png');
+    background-image: url('background inicial.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1661,7 +1661,7 @@ body {
     .hero-left{ 
         flex: none; 
         height: 40vh; 
-        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('background inicial.png');
+        background: url('background inicial.png');
         background-size: contain;
         background-position: center;
     }
@@ -1670,7 +1670,7 @@ body {
         padding: 40px 20px; 
         background: var(--bg-dark);
     }
-    .hero h1{ font-size: 2.8rem; }
+    .hero h1{ font-size: 2.4rem; }
     .hero .lead{ font-size: 1.3rem; }
     .hero .paragrafo{ font-size: 1.1rem; }
     .hero-logo-bottom{ bottom: 20px; right: 20px; }
@@ -1857,7 +1857,7 @@ body {
 /* Tighter hero layout on very large screens */
 @media (min-width: 1200px){
     .hero{ padding: 80px 60px; }
-    .hero h1{ font-size: 4.5rem; }
+    .hero h1{ font-size: 4.0rem; }
     .hero .lead{ font-size: 1.8rem; }
     .paragrafo{ width: 50%; }
     .hero .paragrafo{ font-size: 1.4rem; }
@@ -1872,7 +1872,7 @@ body {
 /* Desktop hero: keep content centered */
 @media (min-width: 769px){
     .hero{ align-items: center; padding-left: 60px; }
-    .hero h1{ text-align: center; font-size: 3.0rem; }
+    .hero h1{ text-align: center; font-size: 2.6rem; }
     .lead{ text-align: center; font-size: 1.12rem; margin-top: 6px; }
     .hero .paragrafo{ text-align: center; font-size: 1.15rem; max-width: 650px; margin: 18px auto 0 auto; }
     .div_btn{ text-align: center; padding-left: 0; margin: 22px auto 0 auto; }
