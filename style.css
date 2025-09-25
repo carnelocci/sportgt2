@@ -2908,6 +2908,10 @@ body {
     background: #0c0c0c;
     color: rgba(255,255,255,0.9);
     border-top: 1px solid rgba(255,255,255,0.06);
+    position: relative;
+    z-index: 10;
+    display: block;
+    visibility: visible;
 }
 
 .site-footer a{
